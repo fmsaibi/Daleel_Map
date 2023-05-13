@@ -1,0 +1,109 @@
+
+
+    func navigationManager(_ navigationManager: NMANavigationManager, didUpdateManeuvers currentManeuver: NMAManeuver?, _ nextManeuver: NMAManeuver?) {
+        
+        
+        if let maneuver = currentManeuver {
+            
+            let distance = maneuver.distanceToNextManeuver
+            print("after \(distance)")
+            let trun = maneuver.turn.rawValue
+            
+            switch trun {
+            
+            case NMAManeuverTurn.undefined.rawValue:           // 0
+                print("An undefined turn")
+                
+            case NMAManeuverTurn.none.rawValue:                 // 1
+                print("Indicates that no turn is necessarytake")
+
+            case NMAManeuverTurn.keepMiddle.rawValue:                 // 2
+                print("keeping to the middle")
+
+            case NMAManeuverTurn.keepRight.rawValue:                  // 3
+                print("keep right")
+                
+            case NMAManeuverTurn.lightRight.rawValue:                 // 4
+                print("make a light right turn")
+                
+            case NMAManeuverTurn.quiteRight.rawValue:                 // 5
+                print("make a normal right turn")
+                
+            case NMAManeuverTurn.heavyRight.rawValue:                 // 6
+                print("make a heavy right turn")
+                
+            case NMAManeuverTurn.keepLeft.rawValue:                   // 7
+                print("keep left")
+                
+            case NMAManeuverTurn.lightLeft.rawValue:                  // 8
+                print("make a light left turn")
+                
+            case NMAManeuverTurn.quiteLeft.rawValue:                  // 9
+                print("make a normal left turn")
+                
+            case NMAManeuverTurn.heavyLeft.rawValue:                  // 10
+                print("make a heavy left turn")
+                
+            case NMAManeuverTurn.return.rawValue:                     // 11
+                print("make a u-turn")
+                
+            case NMAManeuverTurn.roundabout1.rawValue:                // 12
+                print("take the first exit of a roundabout")
+                
+            case NMAManeuverTurn.roundabout2.rawValue:                // 13
+                print("take the second exit of a roundabout")
+                
+            case NMAManeuverTurn.roundabout3.rawValue:                // 14
+                print("take the third exit of a roundabout")
+                
+            case NMAManeuverTurn.roundabout4.rawValue:                // 15
+                print("take the fourth exit of a roundabout")
+                
+            case NMAManeuverTurn.roundabout5.rawValue:                // 16
+                print("take the fifth exit of a roundabout")
+                
+            case NMAManeuverTurn.roundabout6.rawValue:                // 17
+                print("take the sixth exit of a roundabout")
+                
+            case NMAManeuverTurn.roundabout7.rawValue:                // 18
+                print("take the seventh exit of a roundabout")
+                
+            case NMAManeuverTurn.roundabout8.rawValue:                // 19
+                print("take the eighth exit of a roundabout")
+                
+            case NMAManeuverTurn.roundabout9.rawValue:                // 20
+                print("take the ninth exit of a roundabout")
+                
+            case NMAManeuverTurn.roundabout10.rawValue:               // 21
+                print("take the tenth exit of a roundabout")
+                
+            case NMAManeuverTurn.roundabout11.rawValue:               // 22
+                print("take the eleventh exit of a roundabout")
+            
+            case NMAManeuverTurn.roundabout12.rawValue:               // 23
+                print("take the twelfth exit of a roundabout")
+                
+            default:
+                print("No Value")
+            }
+            
+        }
+    }
+
+ 
+ 
+     // Helper function to pop up an alert window
+    func showAlertWithMessage(_ message: String) {
+        
+        let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        
+        self.present(alert, animated: true, completion: nil)
+
+        let when = DispatchTime.now() + 1
+        
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            
+            alert.dismiss(animated: true, completion: nil)
+            
+        }
+    }
