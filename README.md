@@ -7,7 +7,7 @@ The main objective of the app is to supply Daleel Staff with crucial data concer
 - Information about the satellite manifold connection
 - Turn-by-turn navigation utilizing the HERE WeGo Maps API
 
-$${\color{red}To ensure security and protect company proprietary information, specific details or exact geolocation data regarding oil and water wells are not disclosed or included in the app. This measure is taken to maintain the confidentiality and integrity of the company's assets}$$
+##To ensure security and protect company proprietary information, specific details or exact geolocation data regarding oil and water wells are not disclosed or included in the app. This measure is taken to maintain the confidentiality and integrity of the company's assets
 
 
 # Project Presentation
