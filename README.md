@@ -1,6 +1,8 @@
-# Daleel_Map
+<style>
+H2{color:Red !important;}
+</style>
 
-## Project Scope
+# Project Scope
 The main objective of the app is to supply Daleel Staff with crucial data concerning the locations of oil and water wells. This aids in efficiently deploying maintenance teams, especially in areas with limited network connectivity where 3G, 4G, or 5G coverage is absent. The app encompasses the following functionalities:
 
 - Geolocation of all oil and water wells
@@ -8,13 +10,11 @@ The main objective of the app is to supply Daleel Staff with crucial data concer
 - Information about the satellite manifold connection
 - Turn-by-turn navigation utilizing the HERE WeGo Maps API
 
-## Note
+## To ensure security and protect company proprietary information, specific details or exact geolocation data regarding oil and water wells are not disclosed or included in the app. This measure is taken to maintain the confidentiality and integrity of the company's assets
 
-```diff
-- To ensure security and protect company proprietary information, specific details or exact geolocation data regarding oil and water wells are \n not disclosed or included in the app. This measure is taken to maintain the confidentiality and integrity of the company's assets
 
-```
-## Project Scope
+# Project Presentation
+
 
 
 **Main Idea**
